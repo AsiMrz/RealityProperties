@@ -1,0 +1,503 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background-color: #ffffff;
+}
+
+/* font-family: 'Open Sans', sans-serif;
+font-family: 'Noto Serif', serif;
+
+#0049F2
+#F6F7F9
+#F49C3F
+#5FD072
+#989898*/
+
+/* Navigation menu */
+header {
+  position: fixed;
+  z-index: 10;
+  width: 100%;
+  height: 100px;
+  top: 0%;
+  left: 0%;
+  background-color: #0049F2;
+  color: #ffffff;
+  font-family: 'Open Sans', sans-serif;
+  display: flex;
+  justify-content: space-around;
+}
+
+.navbar {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.left {
+  display: flex;
+  width: 85%;
+  left: 0%;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0;
+}
+
+.right {
+  display: flex;
+  width: 15%;
+  left: 90%;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0;
+}
+
+.nav-element{
+  display: inline;
+}
+
+.nav-element a {
+  color: #ffffff;
+  text-decoration: none;
+  padding: 0 25px;
+  font-weight: normal;
+  font-size: 90%;
+}
+
+.nav-element a:hover, i:hover {
+  color: #5FD072;
+  font-size: 100%;
+}
+
+.nav-element i {
+  padding: 0 10px;
+}
+
+.left .icon {
+  display: none;
+}
+
+/* Search section */
+#search {
+  position: relative;
+  margin: 0;
+  top: 100px;
+  background-image: url("../images/BACKGROUND.png");
+  width: 100%;
+  height: 550px;
+  background-color: #0049F2;
+  display: flex;
+  justify-content: space-around;
+}
+
+.search-parent {
+  position: absolute;
+  width: 80%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.search-parent-content {
+  display: flex;
+  display: block;
+  width: 100%;
+  z-index: 2;
+}
+
+.search-parent-content h1 {
+  margin: 0;
+  color: #ffffff;
+  font-family: 'Noto Serif', serif;
+  font-size: 250%;
+  text-align: left;
+  padding: 0;
+}
+
+.search-parent-content p {
+  color: #ffffff;
+  font-family: 'Noto Serif', serif;
+  margin: 10px 0;
+}
+
+.search-field {
+  background-color: #ffffff;
+  border-radius: 10px;
+  width: 55%;
+  height: 50px;
+  margin: 40px 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.fa-search {
+  font-size: 140%;
+  margin: 0px 20px;
+  color: #0049F2;
+}
+
+.search-field input {
+  width: 100%;
+  color: #989898;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 85%;
+  border: none;
+}
+
+.triangle {
+  margin: 0;
+  position: absolute;
+  font-size: 0px; line-height: 0%; width: 72%;
+  border-top: 600px solid rgba(0, 0, 255, 0);
+  border-bottom: none;
+  border-right: 400px solid #ffffff;
+}
+
+/* Featured properties section */
+#properties {
+  position: relative;
+  margin: 100px 0;
+  top: 60px;
+  width: 100%;
+  height: 1000px;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-around;
+}
+
+.properties-parent {
+  position: absolute;
+  width: 80%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  display: block;
+}
+
+.properties-parent h2 {
+  margin: 40px 0;
+  font-family: 'Noto Serif', serif;
+  font-size: 180%;
+}
+
+.villa-parent {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.villa-element {
+  width: 30%;
+}
+
+.villa-element img {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.description {
+  width: 99.5%;
+  height: 110px;
+  margin: -10px 0 40px 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+  color: #989898;
+  border: 0.25px solid #9898984d;
+  border-radius: 0 0 5px 5px;
+}
+
+.description h3 {
+  margin: 0;
+  padding: 10px 15px 0;
+}
+
+.description h4 {
+  margin: 0;
+  font-family: 'Noto Serif', serif;
+  color: #0049F2;
+  padding: 0 15px;
+}
+
+.description p {
+  margin: 0;
+  font-size: 90%;
+  padding: 0 15px;
+}
+
+.description ul {
+  margin: 0;
+  padding: 5px 0;
+  font-size: 90%;
+  padding: 0 15px;
+}
+
+.description .nav-element i {
+  padding: 0 10px 0 0;
+}
+
+.left-padding {
+  padding: 0 0 0 10px;
+}
+
+.button-parent {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.properties-parent button {
+  margin: 20px 0;
+  padding: 10px 40px;
+  height: 60px;
+  background-color: #0049F2;
+  color: #ffffff;
+  font-size: 100%;
+  border-radius: 30px;
+  border: none;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.properties-parent button:hover {
+  background-color: #5FD072;
+}
+
+/* Testemonials section */
+.clients {
+display: flex;
+flex-direction: row;
+justify-content: center;
+margin-bottom: 100px;
+font-family: 'Open Sans', sans-serif;
+}
+
+.client {
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ padding: 3em;
+}
+
+.client:nth-child(2) {
+ box-shadow:0 0 30px grey;
+}
+
+.GreyClient {
+ background-color: lightgrey;
+}
+
+.client h2 {
+ font-size: 90%;
+ text-align: center;
+ color: black;
+ font-family: 'Noto Serif', serif;
+ font-size: 180%;
+}
+
+.client p {
+ font-size: 80%;
+ text-align: center;
+ color: #989898;
+ padding: 7px  20px 0;
+}
+
+h1 {
+ font-size: 200%;
+ text-align: center;
+ color: black;
+ padding: 7px  20px 0;
+}
+
+/* Footer */
+footer {
+ background-color: lightgrey;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+}
+
+footer h5 {
+  margin: 0 0 40px 0;
+  font-weight: normal;
+}
+
+footer img {
+width: 10%;
+padding: 20px;
+}
+
+#blue {
+  padding: 10px 150px 5px 150px;
+}
+#grey {
+  font-family: 'Open Sans';
+  font-size: 90%;
+  text-align: center;
+  color: #989898;
+  padding: 7px  20px 0;
+  width: 47%;
+}
+
+/* Small devices (phones, 600px and down) */
+@media only screen and (max-width: 640px) {
+  /* Navigation menu */
+  .left {
+    width: 100%;
+  }
+
+  .right {
+    display: none;
+  }
+
+  .left img {
+    width: 35%;
+    left: 0%;
+  }
+
+  .left .topnav {
+    width: 65%;
+    left: 35%;
+  }
+
+  .left .icon {
+    display: inline;
+    font-size: 300%;
+    padding-left: 85%;
+  }
+
+  #icon:hover {
+    color: #5FD072;
+    font-size: 300%;
+  }
+
+  .topnav li:not(:first-child) {
+    display: none;
+  }
+
+  .topnav.responsive {
+    position: relative;
+    height: 300%;
+    width: 100%;
+    left: 0%;
+    background: #0049F2;
+    top: 100px;
+  }
+
+  .topnav.responsive .icon {
+    display: none;
+  }
+
+  .topnav.responsive li {
+    float: none;
+    display: block;
+    text-align: right;
+    font-size: 100%;
+    line-height: 2.5;
+    top: 40%;
+  }
+
+  /* Search section */
+  #search {
+    height: 600px;
+  }
+
+  .search-parent-content h1 {
+    font-size: 400%;
+  }
+
+  .search-parent-content p {
+    font-size: 150%;
+  }
+
+  .search-field {
+    width: 100%;
+    height: 70px;
+  }
+
+  .search-field input {
+    font-size: 120%;
+  }
+
+  .triangle {
+    display: none;
+  }
+
+  /* Featured properties section */
+  #properties {
+    height: auto;
+  }
+
+  .properties-parent h2 {
+    margin: 20px 0 80px;
+    font-size: 250%;
+  }
+
+  .villa-element {
+    width: 100%;
+  }
+
+  .description {
+    height: 220px;
+  }
+
+  .description h3 {
+    margin: 20px 0 10px;
+    font-size: 150%;
+  }
+
+  .description h4 {
+    font-size: 150%;
+  }
+
+  .description p {
+    margin: 10px 0;
+    font-size: 120%;
+  }
+
+  .description ul {
+    margin: 15px 0;
+    font-size: 120%;
+  }
+
+  .properties-parent button {
+    font-size: 120%;
+  }
+
+  /* Testemonials section */
+  #clients {
+    position: relative;
+    margin: 100px 0;
+    top: 3700px;
+  }
+
+  .clients {
+  flex-direction: column;
+  }
+
+  .client p {
+   font-size: 3vw;
+  }
+
+  /* Footer */
+  .footer {
+    position: relative;
+    margin: 100px 0;
+    top: 3600px;
+    font-size: 3.5vw;
+  }
+
+  footer img {
+  width: 30%;
+  padding: 20px;
+  }
+
+  #grey {
+    width: 80%;
+  }
+}
